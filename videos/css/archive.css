@@ -1,0 +1,199 @@
+/*** Main Page - Archive Section ********************************************************************************/
+
+.croquet_archive {
+    margin: 50px auto 0px auto;
+    width: 95%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.memorable_title {
+    height: 360px;
+    grid-area: 1/1/1/span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: (1, 1fr);
+    position: relative;
+}
+
+
+.left {
+    grid-area: 1/ 1/ span 1/ span 3;
+    background-image: url(../images/Archive/Ramadan03.jpg);
+    background-position: center;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    -webkit-border-radius: 20px 0 0 20px;
+    -moz-border-radius: 20px 0 0 20px;
+    -ms-border-radius: 20px 0 0 20px;
+    -o-border-radius: 20px 0 0 20px;
+}
+
+.center {
+    grid-area: 1/ 4/ span 1/ span 5;
+    background-image: url(../images/Archive/archive01.png);
+    height: 100% !important;
+    background-size: cover;
+}
+
+.right {
+    grid-area: 1/ 9/ span 1/ span 4;
+    background-image: url(../images/Archive/hamroush02.jpg);
+    object-fit: cover;
+    background-position: center;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    -webkit-border-radius: 0 20px 20px 0;
+    -moz-border-radius: 0 20px 20px 0;
+    -ms-border-radius: 0 20px 20px 0;
+    -o-border-radius: 0 20px 20px 0;
+}
+
+.memorable_title h1 {
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    color: #fffafa;
+    font-size: 52px;
+    font-weight: 900;
+    z-index: 2;
+}
+
+.archive_image {
+    grid-area: 2 / 1 / span 2 / span 6;
+    background-image: url(../images/Archive/khaled_sukar.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    position: relative;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.archive_news {
+    grid-area: 2/ 7/ span 2/ span 6;
+    background-image: url(../images/Archive/News11.jpg);
+    background-size: cover;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    position: relative;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.black_coverTwo,
+.black_coverThree,
+.black_coverFour {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.6;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    z-index: 1;
+}
+
+.black_coverThree,
+.black_coverFour {
+    opacity: .2;
+}
+
+/*************************************************************************************************************/
+
+
+
+/*************************************************************************************************************/
+/**********************************************************/
+/**********************************************************/
+/***********************Media Query************************/
+/**********************************************************/
+/**********************************************************/
+/*Larg devices*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .archive_image {
+        background-position: center;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .archive_image {
+        background-position: center;
+    }
+
+    .archive_news {
+        background-position-x: 20%, 0%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 570px) and (max-width: 767.98px) {
+    .memorable_title h1 {
+        font-size: 30px;
+        left: 13%;
+    }
+
+    .archive_image {
+        background-position: center;
+    }
+
+    .archive_news {
+        background-position-x: 20%, 0%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Very Small Devices (min-width: 305px) and (max-width: 569.98px)*/
+@media (min-width: 305px) and (max-width: 569.98px) {
+
+    .left {
+        grid-area: 1/ 1/ span 1/ span 6;
+    }
+
+    .center {
+        display: none;
+    }
+
+    .right {
+        grid-area: 1/ 7/ span 1/ span 6;
+    }
+
+    .memorable_title h1 {
+        font-size: 22px;
+        top: 43%;
+        left: 11%;
+    }
+
+    .archive_image {
+        grid-area: 2/ 1/ span 1/ span 12;
+        background-position: center;
+    }
+
+    .archive_news {
+        grid-area: 3/ 1/ span 1/ span 12;
+        background-position-x: 20%, 0%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 304.98px) {}

@@ -1,0 +1,189 @@
+* {
+  font-family: 'Amiri', serif;
+}
+
+body {
+  direction: rtl;
+}
+
+/***FirstNav******************************************************************************/
+.ecf_title {
+
+  letter-spacing: 0px;
+  font-size: 2.7em;
+  font-weight: 700;
+
+}
+
+.ecf_title::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-text-stroke: 0px #fff;
+  overflow: hidden;
+  animation: animate 5s linear infinite;
+  -webkit-animation: animate 5s linear infinite;
+  animation-delay: 2s;
+  animation-direction: reverse;
+}
+
+@keyframes animate {
+
+  0%,
+  100% {
+    width: 0;
+  }
+
+  15%,
+  30%,
+  50%,
+  70%,
+  90% {
+    width: 74%;
+  }
+}
+
+/*****************************************************************************************/
+/***ThirdNav******************************************************************************/
+#thirdNav .right_third .menu_two {
+  padding-left: 0px;
+  padding-right: 15px;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.fa-caret-down {
+  padding-left: 0px;
+  padding-right: 4px;
+}
+
+/*****************************************************************************************/
+/***Search Bar ***************************************************************************/
+.containerb {
+  margin-right: 0px;
+  margin-left: 40px;
+}
+
+/*****************************************************************************************/
+/*** About US Mega Menu ******************************************************************/
+.dropdown_four {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+
+.dropdown_left ul {
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+.row_one:hover,
+.row_three:hover,
+.row_four:hover,
+.row_five:hover {
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+/*****************************************************************************************/
+/*** Teams Mega Menu *********************************************************************/
+.dropdown_five {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  right: -50px;
+}
+
+.dropdown_fiveOneColOne ul,
+.dropdown_fiveOneColTwo ul {
+  padding-right: 0px;
+}
+
+.shooting_club {
+  margin-right: 0px;
+  margin-left: 20px;
+}
+
+.dropdown_fiveTwo ul {
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+.shams_club {
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+/*****************************************************************************************/
+/***Players Mega Menu ********************************************************************/
+.dropdown_six {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+
+/************************************************************************************/
+/*** Tournaments Section ************************************************************/
+.dropdown_seven {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+
+/************************************************************************************/
+/*** Rankings Section ***************************************************************/
+.dropdown_eight {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+
+/************************************************************************************/
+/*** News Section *******************************************************************/
+.dropdown_nine {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+
+/************************************************************************************/
+/*** Section One *******************************************************************/
+.section_one>div .slide_text {
+  font-weight: 700;
+}
+
+.section_one>div .text_one,
+.section_one>div .text_three,
+.section_one>div .text_five {
+  position: absolute;
+  bottom: 70px;
+  left: 0px;
+  right: 120px;
+}
+
+.section_one>div .text_two {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  left: 50px;
+}
+
+.section_one>div .text_four {
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  right: 90px;
+  font-size: 1.6em;
+}
+
+.section_one>div .text_five {
+  left: 0;
+  right: calc(30%);
+}
+
+.section_one>div .slide_text .span_one i,
+.section_one>div .slide_text .span_one i {
+  padding-top: 20px;
+}

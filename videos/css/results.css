@@ -1,0 +1,341 @@
+/***SECTION TWO - News Section ***************************************************************************/
+.section_results {
+    margin: 50px auto;
+    width: 95%;
+    height: auto;
+}
+
+.row_results {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row_results small {
+    font-size: 10px;
+}
+
+.row_results small date {
+    color: #649632;
+}
+
+.full_results {
+    text-decoration: none;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    color: #210e7f;
+    font-weight: 600;
+}
+
+.full_results:hover {
+    color: #649632;
+}
+
+.full_results i {
+    padding-top: 5px;
+}
+
+.section_results h2 {
+    margin: 20px 0;
+    color: #210e7f;
+}
+
+.item {
+    width: 99%;
+    display: grid;
+    grid-template-rows: repeat(7, auto);
+    grid-template-columns: repeat(12, auto);
+    color: #210e7f;
+}
+
+.item .match_info {
+    grid-area: 1/ 1/ span 7/ span 11;
+    display: grid;
+    grid-template-rows: repeat(7, auto);
+    grid-template-columns: repeat(8, auto);
+}
+
+.item .match_info .results_title {
+    grid-area: 1/ 1/ span 1/ span 1;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.item .match_info .champ_title {
+    grid-area: 1/ 3/ span 1/ span 6;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(1, auto);
+}
+
+.champ_name,
+.champ_level,
+.match_type {
+    color: #869791;
+    font-size: 10px;
+}
+
+.champ_name {
+    grid-area: 1/ 1/ span 1/ span 1;
+}
+
+.dash {
+    grid-area: 1/ 2/ span 1/ span 1;
+}
+
+.champ_level {
+    grid-area: 1/ 3/ span 1/ span 1;
+}
+
+.dash_two {
+    grid-area: 1/ 4/ span 1/ span 1;
+}
+
+.match_type {
+    grid-area: 1/ 5/ span 1/ span 1;
+}
+
+.first_clubPlayer {
+    grid-area: 2/ 1/ span 1/ span 2;
+    font-size: 10px;
+}
+
+.first_clubTitle {
+    grid-area: 3/ 1/ span 1/ span 2;
+    font-size: 10px;
+    color: #649632;
+}
+
+.result_one {
+    grid-area: 2/ 7/ span 1/ span 1;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.result_two {
+    grid-area: 5/ 7/ span 1/ span 1;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.second_clubPlayer {
+    grid-area: 5/ 1/ span 1/ span 2;
+    font-size: 10px;
+}
+
+.second_clubTitle {
+    grid-area: 6/ 1/ span 1/ span 2;
+    font-size: 10px;
+    color: #649632;
+}
+
+.games_details {
+    grid-area: 7/ 1/ span 1/ span 8;
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: repeat(1, auto);
+}
+
+.item .vertical_sec {
+    grid-area: 1/ 12/ span 7/ span 1;
+    display: grid;
+    place-items: center;
+}
+
+.item .vertical_sec .vertical_line {
+    width: 2px;
+    height: 100px;
+    background-color: #f0f0f0;
+}
+
+.score_one,
+.score_two,
+.score_three,
+.score_four,
+.score_five,
+.score_six,
+.score_seven,
+.score_eight,
+.score_nine,
+.score_ten,
+.score_eleven,
+.score_twelve,
+.score_thirteen,
+.score_fourteen,
+.score_fifteen {
+    font-size: 10px;
+    color: #b68d40;
+    font-weight: 800;
+}
+
+.score_one {
+    grid-area: 1/ 1/ span 1/ span 1;
+}
+
+.score_two {
+    grid-area: 1/ 2/ span 1/ span 1;
+}
+
+.score_three {
+    grid-area: 1/ 3/ span 1/ span 1;
+}
+
+.score_four {
+    grid-area: 1/ 5/ span 1/ span 1;
+}
+
+.score_five {
+    grid-area: 1/ 6/ span 1/ span 1;
+}
+
+.score_six {
+    grid-area: 1/ 7/ span 1/ span 1;
+}
+
+.score_seven {
+    grid-area: 1/ 9/ span 1/ span 1;
+}
+
+.score_eight {
+    grid-area: 1/ 10/ span 1/ span 1;
+}
+
+.score_nine {
+    grid-area: 1/ 11/ span 1/ span 1;
+}
+
+.score_ten {
+    grid-area: 1/ 13/ span 1/ span 1;
+}
+
+.score_eleven {
+    grid-area: 1/ 14/ span 1/ span 1;
+}
+
+.score_twelve {
+    grid-area: 1/ 15/ span 1/ span 1;
+}
+
+.score_thirteen {
+    grid-area: 1/ 17/ span 1/ span 1;
+}
+
+.score_fourteen {
+    grid-area: 1/ 18/ span 1/ span 1;
+}
+
+.score_fifteen {
+    grid-area: 1/ 19/ span 1/ span 1;
+}
+
+.latest_results {
+    position: relative;
+}
+
+.latest_results .owl-nav .owl-next span {
+    font-size: 40px !important;
+    color: #210e7f;
+    opacity: .3;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%) !important;
+    -webkit-transform: translateY(-100%) !important;
+    -moz-transform: translateY(-100%) !important;
+    -ms-transform: translateY(-100%) !important;
+    -o-transform: translateY(-100%) !important;
+    right: -12px;
+    margin: 0;
+    padding: 0;
+}
+
+.latest_results .owl-nav .owl-prev span {
+    font-size: 40px !important;
+    color: #210e7f;
+    opacity: .3;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%) !important;
+    -webkit-transform: translateY(-100%) !important;
+    -moz-transform: translateY(-100%) !important;
+    -ms-transform: translateY(-100%) !important;
+    -o-transform: translateY(-100%) !important;
+    left: -12px;
+    margin: 0;
+    padding: 0;
+}
+
+.latest_results .owl-nav .owl-prev span:hover,
+.latest_results .owl-nav .owl-next span:hover {
+    opacity: 1 !important;
+}
+
+.latest_results .owl-nav {
+    margin-top: 0 !important;
+}
+
+/*************************************************************************************************************/
+
+
+
+/*************************************************************************************************************/
+/**********************************************************/
+/**********************************************************/
+/***********************Media Query************************/
+/**********************************************************/
+/**********************************************************/
+
+/*Larg devices*/
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 840px) and (max-width: 991.98px) {}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 839.99px) {
+    .row_results h2 {
+        font-size: 22px;
+    }
+
+    .row_results a {
+        width: 140px;
+    }
+
+
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 570px) and (max-width: 767.98px) {
+    .row_results h2 {
+        font-size: 22px;
+    }
+
+    .row_results a {
+        width: 140px;
+    }
+}
+
+/* Very Small Devices (min-width: 305px) and (max-width: 569.98px)*/
+@media (min-width: 305px) and (max-width: 569.98px) {
+    .row_results h2 {
+        font-size: 11px;
+    }
+
+    .row_results small {
+        font-size: 8px;
+    }
+
+    .row_results a {
+        font-size: 10px;
+        width: 120px;
+    }
+
+    .full_results i {
+        padding-top: 2px;
+    }
+}
+
+@media (max-width: 304.98px) {}
